@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map version="1.0" orientation="orthogonal" width="110" height="50" tilewidth="32" tileheight="32">
+ <properties>
+  <property name="layerSwapArea" value="!json! { &quot;1&quot;:{  } }"/>
+  <property name="startLocation" value="!json! { &quot;x&quot;:32, &quot;y&quot;:9 }"/>
+ </properties>
+ <tileset firstgid="1" source="../../assets/tiles/Castle_Tileset.tsx"/>
+ <tileset firstgid="43" source="../../assets/tiles/Doors_Tileset.tsx"/>
+ <layer name="Background" width="110" height="50">
+  <data encoding="base64" compression="zlib">
+   eJzt0bFtAwEQA8HP1If6L9IFODsFxD5mADbAfR7e7DMav9GtSbcm3Zp0a9KtSbcm3Zp0a9KtSbcm3Zp0a9KtSbcm3Zp0a9KtSbcm3Zp0a9KtSbee77Pr9h3tDXRr0q1JtybdmnRr0q1JtybdmnRr0q1JtybdmlbfLfcG6w91u1l/qNvN+kPdbtYf6naz/lC3m/WHut2sP9TtZv2hbjfrD3W7WX+o2836Q91u1h/q9t8fZL28YQ==
+  </data>
+ </layer>
+ <layer name="Midground" width="110" height="50">
+  <data encoding="base64" compression="zlib">
+   eJzt1zEOwjAUBcFcJfe/JA0dEFBsEq80I7lIkeZt9bftN/vz3fXNOftNjzG6NenWNLLjmX91m0O3Jt2art5Rtzl0a9Kt6duO7oA1He3oflvXpx3d3Wt7t+O/m+k27opGus2nW5NuTbo16dakW5NuTbo16dakW5NuTbo16dakGwAAAAAAAAAAALx6ACoYVNM=
+  </data>
+ </layer>
+ <layer name="Foreground" width="110" height="50">
+  <properties>
+   <property name="isLayerInsensitive" value="false"/>
+  </properties>
+  <data encoding="base64" compression="zlib">
+   eJzt0UFqAzEQBdE+Su0TSO5/unjhlXHGPfoTNwr1oBYDoxaoq3q4N/WtNQylDEMpw1DKUO99x3ff919R7m1HlHvbEeXedkS5tx1R7m1H1Po7EqQM5d52RLm3HVHubUf80tn/z6YMB62c6aYML1o9tzpXPTRKzp6dqR6apee789TDia6Y8WqWejjZX89RDwtdMUsZFkvnKUNQMlMZwlbvUIYLeubj1ufBHcpwUY++bn0f3KEMQynDUMowlDIMpQxDKcNQyjCUMgylDEMpw1CSJEmSJEmSJCn3A27fZTc=
+  </data>
+ </layer>
+ <objectgroup name="Object Layer 1" width="110" height="50">
+  <object name="toFloor" type="LayerSwap" x="384" y="416" width="224" height="32">
+   <properties>
+    <property name="condition" value="true"/>
+    <property name="from" value="Midground"/>
+    <property name="to" value="Foreground"/>
+   </properties>
+  </object>
+  <object name="toStairs" type="LayerSwap" x="480" y="320" width="96" height="32">
+   <properties>
+    <property name="condition" value="true"/>
+    <property name="from" value="Foreground"/>
+    <property name="to" value="Midground"/>
+   </properties>
+  </object>
+  <object name="exit" type="Door" x="992" y="768" width="128" height="96">
+   <properties>
+    <property name="toLocation" value="!json! {&quot;x&quot;:13, &quot;y&quot;:47 }"/>
+    <property name="toMap" value="&quot;level1 - castle&quot;"/>
+   </properties>
+  </object>
+  <object name="toStairs" type="LayerSwap" x="480" y="352" width="64" height="32">
+   <properties>
+    <property name="condition" value="true"/>
+    <property name="from" value="Foreground"/>
+    <property name="to" value="Midground"/>
+   </properties>
+  </object>
+  <object name="toStairs" type="LayerSwap" x="480" y="384" width="32" height="32">
+   <properties>
+    <property name="condition" value="true"/>
+    <property name="from" value="Foreground"/>
+    <property name="to" value="Midground"/>
+   </properties>
+  </object>
+  <object name="toStairs" type="LayerSwap" x="480" y="288" width="320" height="32">
+   <properties>
+    <property name="condition" value="true"/>
+    <property name="from" value="Foreground"/>
+    <property name="to" value="Midground"/>
+   </properties>
+  </object>
+ </objectgroup>
+</map>

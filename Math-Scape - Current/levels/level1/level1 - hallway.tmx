@@ -1,0 +1,435 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map version="1.0" orientation="orthogonal" width="80" height="30" tilewidth="32" tileheight="32">
+ <tileset firstgid="1" source="../../assets/tiles/Doors_Tileset.tsx"/>
+ <tileset firstgid="33" name="Castle_Tileset_Nonphysical" tilewidth="32" tileheight="32">
+  <image source="../../assets/tiles/Castle_Tileset.png" width="192" height="224"/>
+ </tileset>
+ <tileset firstgid="75" name="Castle_Physical_Tileset" tilewidth="32" tileheight="32">
+  <image source="../../assets/tiles/Castle_Tileset.png" width="192" height="224"/>
+  <tile id="0">
+   <properties>
+    <property name="bodyType" value="static"/>
+    <property name="physics:bounce" value="0"/>
+    <property name="physics:enabled" value="true"/>
+   </properties>
+  </tile>
+  <tile id="1">
+   <properties>
+    <property name="bodyType" value="static"/>
+    <property name="physics:bounce" value="0"/>
+    <property name="physics:enabled" value="true"/>
+   </properties>
+  </tile>
+  <tile id="2">
+   <properties>
+    <property name="bodyType" value="static"/>
+    <property name="physics:bounce" value="0"/>
+    <property name="physics:enabled" value="true"/>
+   </properties>
+  </tile>
+  <tile id="3">
+   <properties>
+    <property name="bodyType" value="static"/>
+    <property name="physics:bounce" value="0"/>
+    <property name="physics:enabled" value="true"/>
+   </properties>
+  </tile>
+  <tile id="4">
+   <properties>
+    <property name="bodyType" value="static"/>
+    <property name="physics:bounce" value="0"/>
+    <property name="physics:enabled" value="true"/>
+   </properties>
+  </tile>
+  <tile id="5">
+   <properties>
+    <property name="bodyType" value="static"/>
+    <property name="physics:bounce" value="0"/>
+    <property name="physics:enabled" value="true"/>
+   </properties>
+  </tile>
+  <tile id="6">
+   <properties>
+    <property name="bodyType" value="static"/>
+    <property name="physics:bounce" value="0"/>
+    <property name="physics:enabled" value="true"/>
+   </properties>
+  </tile>
+  <tile id="7">
+   <properties>
+    <property name="bodyType" value="static"/>
+    <property name="physics:bounce" value="0"/>
+    <property name="physics:enabled" value="true"/>
+   </properties>
+  </tile>
+  <tile id="8">
+   <properties>
+    <property name="bodyType" value="static"/>
+    <property name="physics:bounce" value="0"/>
+    <property name="physics:enabled" value="true"/>
+   </properties>
+  </tile>
+  <tile id="9">
+   <properties>
+    <property name="bodyType" value="static"/>
+    <property name="physics:bounce" value="0"/>
+    <property name="physics:enabled" value="true"/>
+   </properties>
+  </tile>
+  <tile id="10">
+   <properties>
+    <property name="bodyType" value="static"/>
+    <property name="physics:bounce" value="0"/>
+    <property name="physics:enabled" value="true"/>
+   </properties>
+  </tile>
+  <tile id="11">
+   <properties>
+    <property name="bodyType" value="static"/>
+    <property name="physics:bounce" value="0"/>
+    <property name="physics:enabled" value="true"/>
+   </properties>
+  </tile>
+  <tile id="12">
+   <properties>
+    <property name="bodyType" value="static"/>
+    <property name="physics:bounce" value="0"/>
+    <property name="physics:enabled" value="true"/>
+   </properties>
+  </tile>
+  <tile id="13">
+   <properties>
+    <property name="bodyType" value="static"/>
+    <property name="physics:bounce" value="0"/>
+    <property name="physics:enabled" value="true"/>
+   </properties>
+  </tile>
+  <tile id="14">
+   <properties>
+    <property name="bodyType" value="static"/>
+    <property name="physics:bounce" value="0"/>
+    <property name="physics:enabled" value="true"/>
+   </properties>
+  </tile>
+  <tile id="15">
+   <properties>
+    <property name="bodyType" value="static"/>
+    <property name="physics:bounce" value="0"/>
+    <property name="physics:enabled" value="true"/>
+   </properties>
+  </tile>
+  <tile id="16">
+   <properties>
+    <property name="bodyType" value="static"/>
+    <property name="physics:bounce" value="0"/>
+    <property name="physics:enabled" value="true"/>
+   </properties>
+  </tile>
+  <tile id="17">
+   <properties>
+    <property name="bodyType" value="static"/>
+    <property name="physics:bounce" value="0"/>
+    <property name="physics:enabled" value="true"/>
+   </properties>
+  </tile>
+  <tile id="18">
+   <properties>
+    <property name="bodyType" value="static"/>
+    <property name="physics:bounce" value="0"/>
+    <property name="physics:enabled" value="true"/>
+   </properties>
+  </tile>
+  <tile id="19">
+   <properties>
+    <property name="bodyType" value="static"/>
+    <property name="physics:bounce" value="0"/>
+    <property name="physics:enabled" value="true"/>
+   </properties>
+  </tile>
+  <tile id="20">
+   <properties>
+    <property name="bodyType" value="static"/>
+    <property name="physics:bounce" value="0"/>
+    <property name="physics:enabled" value="true"/>
+   </properties>
+  </tile>
+  <tile id="21">
+   <properties>
+    <property name="bodyType" value="static"/>
+    <property name="physics:bounce" value="0"/>
+    <property name="physics:enabled" value="true"/>
+   </properties>
+  </tile>
+  <tile id="22">
+   <properties>
+    <property name="bodyType" value="static"/>
+    <property name="physics:bounce" value="0"/>
+    <property name="physics:enabled" value="true"/>
+   </properties>
+  </tile>
+  <tile id="23">
+   <properties>
+    <property name="bodyType" value="static"/>
+    <property name="physics:bounce" value="0"/>
+    <property name="physics:enabled" value="true"/>
+   </properties>
+  </tile>
+  <tile id="24">
+   <properties>
+    <property name="bodyType" value="static"/>
+    <property name="physics:bounce" value="0"/>
+    <property name="physics:enabled" value="true"/>
+   </properties>
+  </tile>
+  <tile id="25">
+   <properties>
+    <property name="bodyType" value="static"/>
+    <property name="physics:bounce" value="0"/>
+    <property name="physics:enabled" value="true"/>
+   </properties>
+  </tile>
+  <tile id="26">
+   <properties>
+    <property name="bodyType" value="static"/>
+    <property name="physics:bounce" value="0"/>
+    <property name="physics:enabled" value="true"/>
+   </properties>
+  </tile>
+  <tile id="27">
+   <properties>
+    <property name="bodyType" value="static"/>
+    <property name="physics:bounce" value="0"/>
+    <property name="physics:enabled" value="true"/>
+   </properties>
+  </tile>
+  <tile id="28">
+   <properties>
+    <property name="bodyType" value="static"/>
+    <property name="physics:bounce" value="0"/>
+    <property name="physics:enabled" value="true"/>
+   </properties>
+  </tile>
+  <tile id="29">
+   <properties>
+    <property name="bodyType" value="static"/>
+    <property name="physics:bounce" value="0"/>
+    <property name="physics:enabled" value="true"/>
+   </properties>
+  </tile>
+  <tile id="30">
+   <properties>
+    <property name="bodyType" value="static"/>
+    <property name="physics:bounce" value="0"/>
+    <property name="physics:enabled" value="true"/>
+   </properties>
+  </tile>
+  <tile id="31">
+   <properties>
+    <property name="bodyType" value="static"/>
+    <property name="physics:bounce" value="0"/>
+    <property name="physics:enabled" value="true"/>
+   </properties>
+  </tile>
+  <tile id="32">
+   <properties>
+    <property name="bodyType" value="static"/>
+    <property name="physics:bounce" value="0"/>
+    <property name="physics:enabled" value="true"/>
+   </properties>
+  </tile>
+  <tile id="33">
+   <properties>
+    <property name="bodyType" value="static"/>
+    <property name="physics:bounce" value="0"/>
+    <property name="physics:enabled" value="true"/>
+   </properties>
+  </tile>
+  <tile id="34">
+   <properties>
+    <property name="bodyType" value="static"/>
+    <property name="physics:bounce" value="0"/>
+    <property name="physics:enabled" value="true"/>
+   </properties>
+  </tile>
+  <tile id="35">
+   <properties>
+    <property name="bodyType" value="static"/>
+    <property name="physics:bounce" value="0"/>
+    <property name="physics:enabled" value="true"/>
+   </properties>
+  </tile>
+  <tile id="36">
+   <properties>
+    <property name="bodyType" value="static"/>
+    <property name="physics:bounce" value="0"/>
+    <property name="physics:enabled" value="true"/>
+   </properties>
+  </tile>
+  <tile id="37">
+   <properties>
+    <property name="bodyType" value="static"/>
+    <property name="physics:bounce" value="0"/>
+    <property name="physics:enabled" value="true"/>
+   </properties>
+  </tile>
+  <tile id="38">
+   <properties>
+    <property name="bodyType" value="static"/>
+    <property name="physics:bounce" value="0"/>
+    <property name="physics:enabled" value="true"/>
+   </properties>
+  </tile>
+  <tile id="39">
+   <properties>
+    <property name="bodyType" value="static"/>
+    <property name="physics:bounce" value="0"/>
+    <property name="physics:enabled" value="true"/>
+   </properties>
+  </tile>
+  <tile id="40">
+   <properties>
+    <property name="bodyType" value="static"/>
+    <property name="physics:bounce" value="0"/>
+    <property name="physics:enabled" value="true"/>
+   </properties>
+  </tile>
+  <tile id="41">
+   <properties>
+    <property name="bodyType" value="static"/>
+    <property name="physics:bounce" value="0"/>
+    <property name="physics:enabled" value="true"/>
+   </properties>
+  </tile>
+ </tileset>
+ <tileset firstgid="117" source="../../assets/tiles/Castle_Physical_Layer_Insensitive_Tileset.tsx"/>
+ <tileset firstgid="159" name="Other_Tileset" tilewidth="32" tileheight="32">
+  <image source="../../assets/tiles/Other_Tileset.png" width="128" height="128"/>
+ </tileset>
+ <layer name="Background" width="80" height="30">
+  <data encoding="base64" compression="zlib">
+   eJzt1rENACAIRUFmsWH/DS10A0NEc8W15OVXZEQkAAAAwIGx/XDDfvf3AAAA6nT5+7t0vNrdpQOAZQJJsm1M
+  </data>
+ </layer>
+ <layer name="Background_Doors" width="80" height="30">
+  <data encoding="base64" compression="zlib">
+   eJzt17EJACAAAzAV9P+TFbxAHCySQNfStaUAAAAA3Kkr7ZOOF/rK+KQDAADIlvKbUnacSvlNKTsA2CYThABH
+  </data>
+ </layer>
+ <layer name="Midground" width="80" height="30">
+  <data encoding="base64" compression="zlib">
+   eJzt0zEKwCAQRUHP5iFz3hSCMWAhuwiCM/BLm8daCgAAAACcqw57rC/Sz/53pN/+hrM3ty9yh3yif5lm9p9Zp12Odjna5WgHwG4vWvl9KQ==
+  </data>
+ </layer>
+ <layer name="Foreground" width="80" height="30">
+  <data encoding="base64" compression="zlib">
+   eJzt2cEJgDAQRNFtLUXar2cxkqxzEOR9mAbeZSEZVTXMzMzskx3W2sxPe/HL4pfFL4tfFr8sfln8svhl8cvil8Uvi18Wv37eX973ZMZv3Y4dv3m7dvzudez4Xeva+f9Y31cz+99OxXpDKw==
+  </data>
+ </layer>
+ <objectgroup name="Object Layer 1" width="80" height="30">
+  <object name="PrisonDoor" type="Door" x="256" y="768" width="64" height="64">
+   <properties>
+    <property name="toDoor" value="UpperDoor"/>
+    <property name="toLocation" value=""/>
+    <property name="toMap" value="&quot;level1 - castle&quot;"/>
+   </properties>
+  </object>
+  <object name="KitchenDoor" type="Door" x="1344" y="768" width="64" height="64">
+   <properties>
+    <property name="toDoor" value=""/>
+    <property name="toLocation" value=""/>
+    <property name="toMap" value=""/>
+   </properties>
+  </object>
+  <object name="Door6" type="Door" x="1344" y="416" width="64" height="64">
+   <properties>
+    <property name="toDoor" value=""/>
+    <property name="toLocation" value=""/>
+    <property name="toMap" value=""/>
+   </properties>
+  </object>
+  <object name="Door5" type="Door" x="800" y="416" width="64" height="64">
+   <properties>
+    <property name="toDoor" value=""/>
+    <property name="toLocation" value=""/>
+    <property name="toMap" value=""/>
+   </properties>
+  </object>
+  <object name="Door4" type="Door" x="256" y="416" width="64" height="64">
+   <properties>
+    <property name="toDoor" value=""/>
+    <property name="toLocation" value=""/>
+    <property name="toMap" value=""/>
+   </properties>
+  </object>
+  <object name="toStairs" type="LayerSwap" x="2176" y="768" width="64" height="32">
+   <properties>
+    <property name="condition" value="true"/>
+    <property name="from" value="Midground"/>
+    <property name="to" value="Foreground"/>
+   </properties>
+  </object>
+  <object name="toStairs" type="LayerSwap" x="2176" y="736" width="96" height="32">
+   <properties>
+    <property name="condition" value="true"/>
+    <property name="from" value="Midground"/>
+    <property name="to" value="Foreground"/>
+   </properties>
+  </object>
+  <object name="toStairs" type="LayerSwap" x="2176" y="704" width="128" height="32">
+   <properties>
+    <property name="condition" value="true"/>
+    <property name="from" value="Midground"/>
+    <property name="to" value="Foreground"/>
+   </properties>
+  </object>
+  <object name="toStairs" type="LayerSwap" x="2176" y="672" width="160" height="32">
+   <properties>
+    <property name="condition" value="true"/>
+    <property name="from" value="Midground"/>
+    <property name="to" value="Foreground"/>
+   </properties>
+  </object>
+  <object name="toStairs" type="LayerSwap" x="2176" y="640" width="192" height="32">
+   <properties>
+    <property name="condition" value="true"/>
+    <property name="from" value="Midground"/>
+    <property name="to" value="Foreground"/>
+   </properties>
+  </object>
+  <object name="toFloor" type="LayerSwap" x="2368" y="608" width="32" height="32">
+   <properties>
+    <property name="condition" value="true"/>
+    <property name="from" value="Midground"/>
+    <property name="to" value="Foreground"/>
+   </properties>
+  </object>
+  <object name="toFloor" type="LayerSwap" x="2336" y="576" width="64" height="32">
+   <properties>
+    <property name="condition" value="true"/>
+    <property name="from" value="Foreground"/>
+    <property name="to" value="Midground"/>
+   </properties>
+  </object>
+  <object name="toFloor" type="LayerSwap" x="2304" y="544" width="96" height="32">
+   <properties>
+    <property name="condition" value="true"/>
+    <property name="from" value="Foreground"/>
+    <property name="to" value="Midground"/>
+   </properties>
+  </object>
+  <object name="toFloor" type="LayerSwap" x="2272" y="512" width="128" height="32">
+   <properties>
+    <property name="condition" value="true"/>
+    <property name="from" value="Foreground"/>
+    <property name="to" value="Midground"/>
+   </properties>
+  </object>
+  <object name="toFloor" type="LayerSwap" x="2240" y="480" width="160" height="32">
+   <properties>
+    <property name="condition" value="true"/>
+    <property name="from" value="Foreground"/>
+    <property name="to" value="Midground"/>
+   </properties>
+  </object>
+ </objectgroup>
+</map>
