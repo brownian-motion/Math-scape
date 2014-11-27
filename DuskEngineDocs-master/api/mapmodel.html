@@ -1,0 +1,55 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+	<title>Map | Dusk</title>
+	<link rel="stylesheet" href="../styles/lists.css">
+	<link rel="stylesheet" href="../styles/content-text.css">
+	<link rel="stylesheet" href="../styles/misc.css">
+	<link rel="stylesheet" href="../styles/code.css">
+</head>
+
+<body>
+	<a name="top"></a>
+	<div id="title">
+		<a class="back" href="../index.html">Back to Index</a>
+		<h2 class="page-title"></h2>
+	</div>
+	
+	<div class="content">
+		<h3 class="entry-title">Map Object Model</h3>
+		
+		<p>This is the object model for a Map object created with <code>dusk.buildMap</code>. Please note that this page does not include functions, but rather only properties.</p>
+
+		<ul>
+			<h4 class="list-title">Dusk Map</h4>
+			<li><code>map.props</code> : <a href="propstable.html">Properties Table</a></li>
+			<ul>
+				<h4 class="list-title"><code>map.layer</code></h4>
+				<li>Contains map layers from Tiled.</li>
+				<li><code>map.layer[index]</code> : Layer object built in Tiled. Index 1 is in the front of the map.</li>
+				<li><code>map.layer[name]</code> : Layer object built in Tiled. <code>name</code> corresponds to the name of a layer in Tiled.</li>
+			</ul>
+			<ul>
+				<h4 class="list-title"><code>map.data</code></h4>
+				<li>Contains map data values.</li>
+				<li><code>map.data.numLayers</code> : Number of layers loaded in the map.</li>
+				<li><code>map.data.numTiledLayers</code> : Number of layers built in Tiled. This may not be the same as <code>.numLayers</code>, on account of Dusk's <code>!inactive!</code> property.</li>
+				<li><code>map.data.tilesetCount</code> : Number of tilesets in the map.</code></li>
+				<li><code>map.data.mapWidth</code> : Width of map in tiles.</li>
+				<li><code>map.data.mapHeight</code> : Height of map in tiles.</li>
+				<li><code>map.data.rawTileWidth</code> : Map tile width before scaling, equal to what was set in Tiled.</li>
+				<li><code>map.data.rawTileHeight</code> : Map tile height before scaling, equal to what was set in Tiled.</li>
+				<li><code>map.data.tileWidth</code> : Map tile width after Dusk's automatic scaling is applied.</li>
+				<li><code>map.data.tileHeight</code> : Map tile height after Dusk's automatic scaling is applied.</li>
+				<li><code>map.data.width</code> : Width of map in pixels. This may not be the same as Corona's normal <code>map.width</code>, on account of the effect of tile culling.</li>
+				<li><code>map.data.height</code> : Height of map in pixels. This may not be the same as Corona's normal <code>map.height</code>, on account of the effect of tile culling.</li>
+			</ul>
+		</ul>
+	</div>
+
+	<script src="../scripts/nanochrome.js" type="text/javascript"></script>	
+	<footer></footer>
+</body>
+
+</html>

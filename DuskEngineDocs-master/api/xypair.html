@@ -1,0 +1,55 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+	<title>XY Pair | Dusk</title>
+	<link rel="stylesheet" href="../styles/lists.css">
+	<link rel="stylesheet" href="../styles/content-text.css">
+	<link rel="stylesheet" href="../styles/misc.css">
+	<link rel="stylesheet" href="../styles/code.css">
+</head>
+
+<body>
+	<a name="top"></a>
+	<div id="title">
+		<a class="back" href="../index.html">Back to Index</a>
+		<h2 class="page-title"></h2>
+	</div>
+	
+	<div class="content">
+		<h3 class="entry-title">XY Pair</h3>
+		
+		<p>An XY Pair is a data format existing in many Dusk methods. It can be provided in one of three forms. If a method is specified as using X and Y, being of type XY Pair-X and XY Pair-Y, respectively, this is what it refers to. For a method that uses an XY Pair, any of these forms may be used.</p>
+		
+		<h4>Form 1</h4>
+		<p>The most basic form of an XY Pair is provided in the form of two number variables, X and Y.</p>
+		<pre><code>local x, y = 10, 10
+local tile = map.layer[1].tile(x, y)
+local tile2 = map.layer[1].tile(11, 10)</code></pre>
+		
+		<h4>Form 2</h4>
+		<p>The second form of an XY Pair is provided from a table with the keys <code>x</code> and <code>y</code>. These values are then used as the required X and Y.</p>
+		<pre><code>local xy = {
+	x = 10,
+	y = 10
+}
+
+local tile = map.layer[1].tile(xy)
+local tile2 = map.layer[1].tile({x = 11, y = 10})</code></pre>
+		<p>Why is this useful? Any table with X and Y values in it may be used as the parameter, without you having to "unpack" it and provide <code>t.x</code> and <code>t.y</code>.</p>
+		<pre><code>local function onTouch(event)
+	local tileX, tileY = map.layer[1].pixelsToTiles(event)
+end</pre></code>
+
+		<h4>Form 3</h4>
+		<p>The third form of an XY Pair is also provided from a table, but instead of <code>x</code> and <code>y</code> keys, the table has <code>[1]</code> and <code>[2]</code> indices. This form is evaluated last; if a table has <code>x</code> and <code>y</code> keys, they will be used.</p>
+		<pre><code>local xy = {10, 10}
+local tile = map.layer[1].tile(xy)
+local tile2 = map.layer[1].tile({11, 10})</code></pre>
+	</div>
+
+	<script src="../scripts/nanochrome.js" type="text/javascript"></script>	
+	<footer></footer>
+</body>
+
+</html>

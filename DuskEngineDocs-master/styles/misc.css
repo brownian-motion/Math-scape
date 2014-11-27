@@ -1,0 +1,172 @@
+/*
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+misc.css
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+*/
+
+/*
+--------------------------------------------------------------------------------
+Div Styles
+--------------------------------------------------------------------------------
+*/
+
+div {
+	border-style: hidden;
+	text-indent: 0px;
+	margin-left: 0px;
+}
+
+div.content {
+	margin-left: 40px;
+	margin-right: 40px;
+}
+
+div.navbar {
+	margin-bottom: 20px;
+	margin-left: 20px;
+	margin-right: 20px;
+	padding-top: 30px;
+	padding-bottom: 30px;
+
+	border-right: solid;
+	border-right-color: rgb(220, 220, 255);
+	border-right-width: 1px;
+
+	float: left;
+}
+
+/*
+--------------------------------------------------------------------------------
+Ruler Style
+--------------------------------------------------------------------------------
+*/
+
+ruler {
+	border-color: rgb(220, 220, 255);
+}
+
+ruler.horizontal {
+	border-top: solid;
+	border-top-width: 1px;
+	border-top-color: rgb(220, 220, 255);
+
+	margin-left: 6px;
+	margin-right: 6px;
+	margin-top: 3px;
+	margin-bottom: 3px;
+	width: auto;
+	display: block;
+}
+
+/*
+--------------------------------------------------------------------------------
+Footer Styles
+--------------------------------------------------------------------------------
+*/
+
+footer {
+	font-size: 7pt;
+	position: fixed;
+	bottom: 10px;
+	right: 10px;
+}
+
+footer:after {
+	content: "Written by Caleb Place 2013"
+}
+
+lastmod {
+	font-size: 7pt;
+	position: fixed;
+	bottom: 2.5em;
+	right: 10px;
+}
+
+/*
+--------------------------------------------------------------------------------
+Button Styles
+--------------------------------------------------------------------------------
+*/
+
+button {
+	border-radius: 4px;
+	background: none;
+	color: rgb(220, 220, 255);
+	border-color: rgb(220, 220, 255);
+	border: solid;
+	border-width: 1px;
+	outline: none;
+}
+
+button:hover {
+	background-color: rgb(220, 220, 255);
+	color: rgb(0, 0, 0);
+	border-color: rgb(220, 220, 255);
+}
+
+button:active {
+	background: rgb(150, 150, 200);
+}
+
+button.back {
+	background: none;
+	border: solid;
+	border-color: rgb(255, 255, 0);
+	border-width: 1px;
+	border-radius: 4px;
+	color: rgb(255, 255, 0);
+	font-size: 10pt;
+	margin-left: 10px;
+	margin-right: 10px;
+	float: left;
+}
+
+button[id="hideshow"] {
+	display: none;
+}
+
+/*
+--------------------------------------------------------------------------------
+Scrollbar Styles
+--------------------------------------------------------------------------------
+*/
+
+body * {
+	scrollbar-arrow-color: rgb(120, 120, 200);
+	scrollbar-face-color: rgb(120, 120, 200);
+	scrollbar-3dlight-color: rgb(200, 200, 255);
+	scrollbar-darkshadow-color: rgb(60, 60, 120);
+	scrollbar-track-color: rgb(55, 54, 53);
+	scrollbar-base-color: rgb(55, 54, 53);
+}
+
+/* Chrome and Safari */
+::-webkit-scrollbar-track{
+	border: none;
+	border-radius: 0.5ex;
+	background-color: rgb(55, 54, 53)
+}
+
+::-webkit-scrollbar {
+  height: 6px;
+	width: 6px;
+	background: rgb(0, 0, 0);
+}
+
+::-webkit-scrollbar-thumb {
+	background: rgb(120, 120, 200);
+	-webkit-border-radius: 1ex;
+	-webkit-border-color: rgb(0, 0, 0);
+	-webkit-border-width: 6px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+	background: rgb(140, 140, 220);
+}
+
+::-webkit-scrollbar-corner {
+	background: rgb(0, 0, 0);
+	border-color: rgb(0, 0, 0);
+}

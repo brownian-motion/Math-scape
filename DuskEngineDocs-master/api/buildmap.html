@@ -1,0 +1,51 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+	<title>dusk.buildMap() | Dusk</title>
+	<link rel="stylesheet" href="../styles/lists.css">
+	<link rel="stylesheet" href="../styles/content-text.css">
+	<link rel="stylesheet" href="../styles/misc.css">
+	<link rel="stylesheet" href="../styles/code.css">
+</head>
+
+<body>
+	<a name="top"></a>
+	<div id="title">
+		<a class="back" href="../index.html">Back to Index</a>
+		<h2 class="page-title"></h2>
+	</div>
+	
+	<div class="content">
+		<h3 class="entry-title"><code>dusk.buildMap()</code></h3>
+		
+		<h4 class="key">Description:</h4>
+		<ul>
+			<li>Generates a map object according to a data file exported from <a href="http://www.mapeditor.org">Tiled</a>.</li>
+		</ul>
+
+		<h4 class="key">Syntax:</h4>
+		<ul>
+			<li><code>dusk.buildMap(filename, [base])</code></li>
+		</ul>
+
+		<h4 class="key">Arguments:</h4><br>
+		<ul>
+			<li><code>filename</code> <mini>(string, required)</mini> : The path to the map file, including extension. Directories are separated with forward slashes (<code>/</code>). Dusk supports either JSON or Lua encoding for map files, both available from Tiled's export menu.</li>
+			<li><code>base</code> <mini>(<a href="http://docs.coronalabs.com/api/library/system/#constants">Corona directory constant</a>, optional)</mini> : The base directory of the map file. This must be a Corona directory constant, to wit, <code>system.DocumentsDirectory</code>, <code>system.CachesDirectory</code>, <code>system.TemporaryDirectory</code>, or <code>system.ResourceDirectory</code>. Defaults to <code>system.ResourceDirectory</code>. Does not apply to Lua maps.</li>
+		</ul>
+		
+		<h4 class="key">Returns:</h4><br>
+		<ul>
+			<li><code>map</code> <mini>(<a href="mapmodel.html">Map</a>)</mini> : The resulting map.</li>
+		</ul>
+
+		<h4 class="key">Example:</h4><br>
+		<pre><code>local map = dusk.buildMap("directory/mapname.lua")</code></pre>
+	</div>
+
+	<script src="../scripts/nanochrome.js" type="text/javascript"></script>	
+	<footer></footer>
+</body>
+
+</html>

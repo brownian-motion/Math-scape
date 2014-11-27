@@ -1,0 +1,50 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+	<title>dusk.getPreference() | Dusk</title>
+	<link rel="stylesheet" href="../styles/lists.css">
+	<link rel="stylesheet" href="../styles/content-text.css">
+	<link rel="stylesheet" href="../styles/misc.css">
+	<link rel="stylesheet" href="../styles/code.css">
+</head>
+
+<body>
+	<a name="top"></a>
+	<div id="title">
+		<a class="back" href="../index.html">Back to Index</a>
+		<h2 class="page-title"></h2>
+	</div>
+	
+	<div class="content">
+		<h3 class="entry-title"><code>dusk.getPreference()</code></h3>
+		
+		<h4 class="key">Description:</h4>
+		<ul>
+			<li>Retrieves the value of a library preference. See the <a href="preferences.html">preference guide</a> for information on preference values.</li>
+		</ul>
+
+		<h4 class="key">Syntax:</h4>
+		<ul>
+			<li><code>dusk.getPreference(preferenceName)</code></li>
+		</ul>
+
+		<h4 class="key">Arguments:</h4><br>
+		<ul>
+			<li><code>preferenceName</code> <mini>(string, required)</mini> : The name of the preference to retrieve. Names are case-sensitive.</li>
+		</ul>
+		
+		<h4 class="key">Returns:</h4><br>
+		<ul>
+			<li><code>preference</code> <mini>(preference value)</mini> : The retrieved value of the corresponding preference.</li>
+		</ul>
+
+		<h4 class="key">Example:</h4><br>
+		<pre><code>local virtualObjectsVisible = dusk.getPreference("virtualObjectsVisible")</code></pre>
+	</div>
+
+	<script src="../scripts/nanochrome.js" type="text/javascript"></script>	
+	<footer></footer>
+</body>
+
+</html>

@@ -1,0 +1,106 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+	<title>Dusk Engine Documentation</title>
+	<link rel="stylesheet" href="styles/lists.css">
+	<link rel="stylesheet" href="styles/content-text.css">
+	<link rel="stylesheet" href="styles/misc.css">
+	<link rel="stylesheet" href="styles/code.css">
+</head>
+
+<body>
+	<a name="top"></a>
+	<div id="title">
+		<h2 class="page-title"></h2>
+	</div>
+	
+	<div class="navbar">
+		<ul>
+			<h4 class="list-title">Dusk Library</h4>
+			<li class="label"><a class="label" href="api/setpreference.html"><code>dusk.setPreference()</code></a></li>
+			<li class="label"><a class="label" href="api/getpreference.html"><code>dusk.getPreference()</code></a></li>
+			<li class="label"><a class="label" href="api/buildmap.html"><code>dusk.buildMap()</code></a></li>
+		</ul>
+
+		<ul>
+			<h4 class="list-title">Map</h4>
+			<li class="model"><a class="label" href="api/mapmodel.html">Map</a></li>
+			<li class="label"><a class="label" href="api/destroymap.html"><code>map.destroy()</code></a></li>
+			<li class="label"><a class="label" href="api/updateview.html"><code>map.updateView()</code></a></li>
+		</ul>
+
+		<ul>
+			<h4 class="list-title">Tile Layers</h4>
+			<li class="model"><a class="label" href="api/tilelayermodel.html">Tile Layer</a></li>
+			<li class="model"><a class="label" href="api/tilemodel.html">Tile</a></li>
+			<li class="core"><code>layer._drawTile()</code></li>
+			<li class="core"><code>layer._eraseTile()</code></li>
+			<li class="core"><code>layer._redrawTile()</code></li>
+			<li class="core"><code>layer._edit()</code></li>
+			<li class="core"><code>layer.draw()</code></li>
+			<li class="core"><code>layer.erase()</code></li>
+			<li class="label"><a class="label" href="api/layertile.html"><code>layer.tile()</code></a></li>
+			<li class="label"><a class="label" href="api/layertilebypixels.html"><code>layer.tileByPixels()</code></a></li>
+			<li class="label"><a class="label" href="api/layertilestopixels.html"><code>layer.tilesToPixels()</code></a></li>
+			<li class="label"><a class="label" href="api/layerpixelstotiles.html"><code>layer.pixelsToTiles()</code></a></li>
+		</ul>
+
+		<ul>
+			<h4 class="list-title">Object Layers</h4>
+			<li class="model"><a class="label" href="api/objectlayermodel.html">Object Layer</a></li>
+			<li class="model"><a class="label" href="api/objectmodels.html">Object</a></li>
+			<li class="core"><code>layer._newIterator()</code></li>
+			<li class="core"><code>layer._literal()</code></li>
+			<li class="core"><code>layer._match()</code></li>
+			<li class="label"><a class="label" href="api/iterators.html">Iterators</a></li>
+		</ul>
+
+		<ul>
+			<h4 class="list-title">Image Layers</h4>
+			<li class="model">Image Layer Object Model</li>
+		</ul>
+
+		<ul>
+			<h4 class="list-title">Camera System</h4>
+			<li class="model">Camera System Object Model</li>
+			<li class="label"><code>layer.updateCamera()</code></li>
+			<li class="label"><code>map.snapCamera()</code></li>
+			<li class="label"><code>map.setViewpoint()</code></li>
+			<li class="label"><code>map.getViewpoint()</code></li>
+			<li class="label"><code>map.positionCamera()</code></li>
+			<li class="label"><code>map.enableFocusTracking()</code></li>
+			<li class="label"><code>map.setCameraFocus()</code></li>
+			<li class="label"><code>map.setCameraBounds()</code></li>
+			<li class="label"><code>map.setTrackingLevel()</code></li>
+			<li class="label"><code>map.getTrackingLevel()</code></li>
+			<li class="label"><code>map.setDamping()</code></li>
+			<li class="label"><code>map.getDamping()</code></li>
+		</ul>
+
+		<ul>
+			<h4 class="list-title">Miscellaneous</h4>
+			<li class="label"><a class="label" href="api/preferences.html">Preference Guide</a></li>
+			<li class="label"><a class="label" href="api/xypair.html">XY Pair</a></li<
+		</ul>
+	</div>
+
+	<div class="content">
+		<h3 class="entry-title">Dusk Engine Documentation</h3>
+		<p>Welcome to the Dusk Engine API reference. Pick a topic from the navigation bar to the left.</p>
+		<p>Notice that topics marked with <font color="#DCDC00">~[ DC ]~</font> are available (it stands for "Documentation Completed"), while topics without it are still in progress or have yet to be written. This system of markings is temporary and will be removed once the documentation is completed.</p>
+		<p>Also notice that all topics may not be covered in this documentation. I am aware of this and am working on writing documentation for everything.</p>
+	
+		<button id="hideshow">Hide Core</button>
+		<p class="core">Methods marked <font color="#969600">(core)</font> are methods mostly used by the Dusk Engine core processes, but may also be used by you, to gain lower-level control, should you wish to do so. Core-level methods will be documented last.</p>
+
+		<noscript><p><mini>[Enable JavaScript to hide Core info]</mini></p></noscript>
+	</div>
+	
+	<script src="scripts/hide.js" type="text/javascript"></script>
+	<script src="scripts/lastupdated.js" type="text/javascript"></script>
+
+	<footer></footer>
+</body>
+
+</html>
