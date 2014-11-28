@@ -1,0 +1,56 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+	<title>Preference Guide | Dusk</title>
+	<link rel="stylesheet" href="../styles/lists.css">
+	<link rel="stylesheet" href="../styles/content-text.css">
+	<link rel="stylesheet" href="../styles/misc.css">
+	<link rel="stylesheet" href="../styles/code.css">
+</head>
+
+<body>
+	<a name="top"></a>
+	<div id="title">
+		<a class="back" href="../index.html">Back to Index</a>
+		<h2 class="page-title"></h2>
+	</div>
+	
+	<div class="content">
+		<h3 class="entry-title">Preference Guide</h3>
+
+		<p>This is a list of supported preferences for <code>dusk.getPreference()</code> and <code>dusk.setPreference</code>. Please see their associated pages for more info.</p>
+
+		<h4 class="key">Supported Preferences:</h4>
+		<ul>
+			<li><code>spaceAfterEscapedPrefix</code> <mini>(Boolean)</mini> : If this is <code>true</code>, the first character after special prefixes like <code>!dot!</code> and <code>!nodot!</code> is ignored, thereby offering better readability: <code>!nodot! ...abc...</code> rather than <code>!nodot!...abc...</code>. Make sure, however, that you have it to your desired setting; if you create something like <code>!dot!a.b.c</code> with it enabled, you will likely get unexpected results.</li>
+			<li><code>dotImpliesTable</code> <mini>(Boolean)</mini> : Specifies whether dot symbols (<code>.</code>) by default are treated as table separators when provided in property names. If this is <code>true</code>, dots will be parsed as keys; if <code>false</code>, dots are interpreted as-is.</li>
+			<li><code>detectMapPath</code> <mini>(Boolean)</mini> : If set to <code>true</code>, Dusk will search for tileset images starting from the map's directory. You should enable this if you save your tilesets in the same directory or in a subdirectory of your map files.</li>
+			<ruler class="horizontal"></ruler>
+			<li><code>redrawOnTileExistent</code> <mini>(Boolean)</mini> : By default, Dusk only draws a tile in a tile layer if one doesn't already exist at the same <code>x,y</code> location in that layer. If set to <code>true</code>, this behavior is overridden and existing tiles will be redrawn. This greatly decreases the engine speed, so only enable this if you have a very good reason for it.</li>
+			<li><code>enableTwindex</code> <mini>(Boolean)</mini> : This specifies whether the Twindex data structure is used for tile layer drawing and erasing. Twindexes increase viewport management (tile culling and drawing) speed, but at the same time decrease initial loading speed.</li>
+			<ruler class="horizontal"></ruler>
+			<li><code>autoGenerateObjectShapes</code> <mini>(Boolean)</mini> : If set to <code>true</code>, Dusk will automatically generate physics bodies for objects with physics enabled. Ellipse objects will get radii, rectangle objects will get normal rectangle bodies, and polygons and polylines will get their according shapes. This shape only applies to the first physics body of an object; if you have more than one body enabled, only the first will have an automatically generated shape.</li>
+			<li><code>ellipseRadiusMode</code> <mini>(string)</mini> : Defines the way automatically generated bodies are created for ellipse objects. A value of <code>min</code> means the calculated radius will be the smallest length from side to center of the ellipse, a value of <code>max</code> will calculate the greatest distance, and a value of <code>average</code> will use the average of them.</li>
+			<ruler class="horizontal"></ruler>
+			<li><code>objTypeRectPointSquare</code> <mini>(Boolean)</mini> : Specifies whether point objects (rectangles with <code>w,h = 0,0</code>) and square objects (rectangles with <code>w = h</code>) are given the <code>objType</code> of <code>point</code> and <code>square</code>, respectively, or are simply given <code>rectangle</code> as the <code>objType</code>.</li>
+			<li><code>virtualObjectsVisible</code> <mini>(Boolean)</mini> : Specifies whether rectangle objects, ellipse objects, polyline objects, and polygon objects within object layers are displayed or hidden.</li>
+			<ruler class="horizontal"></ruler>
+			<li><code>enableCamera</code> <mini>(Boolean)</mini> : Set to <code>true</code> to enable Dusk's camera system for maps. If set to <code>false</code>, the camera methods don't even exist in the map object.</li>
+			<li><code>defaultCameraTrackingLevel</code> <mini>(number)</mini> : The tracking level the camera system of a map starts out with. The tracking level can be changed after the map is created.</li>
+			<li><code>scaleCameraBoundsToScreen</code> <mini>(Boolean)</mini> : If set to <code>true</code>, scaling of the map with camera bounds enabled will internally scale the bounds accordingly. This will result in the same amount of viewable content.</li>
+			<ruler class="horizontal"></ruler>
+			<li><code>onPointBased</code> <mini>(function)</mini> : A function called each time a polygon or polyline object is created. The object is sent as an argument.</li>
+			<li><code>onEllipse</code> <mini>(function)</mini> : A function called each time an ellipse object is created. The object is sent as an argument.</li>
+			<li><code>onImageObj</code> <mini>(function)</mini> : A function called each time an image object is created. The object is sent as an argument.</li>
+			<li><code>onRect</code> <mini>(function)</mini> : A function called each time a rectangle object is created. The object is sent as an argument.</li>
+			<li><code>onObj</code> <mini>(function)</mini> : A function called each time an object is created. The object is sent as an argument.</li>
+		</ul>
+
+	</div>
+
+	<script src="../scripts/nanochrome.js" type="text/javascript"></script>	
+	<footer></footer>
+</body>
+
+</html>

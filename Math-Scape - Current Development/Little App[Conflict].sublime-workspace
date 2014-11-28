@@ -1,0 +1,480 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"add",
+				"addEventListener()	EventListener"
+			],
+			[
+				"display.",
+				"display.newGroup()	display"
+			],
+			[
+				"display.new",
+				"display.newRect()	display"
+			],
+			[
+				"setSe",
+				"setSequence()	SpriteObject"
+			],
+			[
+				"graphics",
+				"graphics.newImageSheet()	graphics"
+			],
+			[
+				"fore",
+				"force"
+			],
+			[
+				"globals.",
+				"globals.RUN_VELOCITY"
+			],
+			[
+				"end",
+				"end	Keyword"
+			],
+			[
+				"getVe",
+				"getLinearVelocity()	Body"
+			],
+			[
+				"helpers.",
+				"helpers.object2Name"
+			],
+			[
+				"true",
+				"true"
+			],
+			[
+				"then",
+				"then"
+			],
+			[
+				"else",
+				"event.localPlayerScore	gameNetwork"
+			],
+			[
+				"nil",
+				"nil	Keyword"
+			],
+			[
+				"KeyEv",
+				"KeyEvent.KEYCODE_DPAD_UP"
+			]
+		]
+	},
+	"buffers":
+	[
+		{
+			"file": "config.lua",
+			"settings":
+			{
+				"buffer_size": 490,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "welcome.lua",
+			"settings":
+			{
+				"buffer_size": 4161,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "/C/Users/brown274212/Desktop/variablePassTest.lua",
+			"settings":
+			{
+				"buffer_size": 109,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "screenSwap.lua",
+			"settings":
+			{
+				"buffer_size": 3417,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "template__scenes",
+			"settings":
+			{
+				"buffer_size": 2293,
+				"line_ending": "Windows",
+				"name": "local composer = require( \"composer\" )"
+			}
+		},
+		{
+			"file": "main.lua",
+			"settings":
+			{
+				"buffer_size": 2673,
+				"line_ending": "Unix"
+			}
+		}
+	],
+	"build_system": "Packages/Corona Editor/Corona SDK.sublime-build",
+	"command_palette":
+	{
+		"height": 58.0,
+		"selected_items":
+		[
+			[
+				"install",
+				"Package Control: Install Package"
+			]
+		],
+		"width": 400.0
+	},
+	"console":
+	{
+		"height": 125.0
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"file_history":
+	[
+		"/C/Users/brown274212/Google Drive/OUYA/OUYA-Corona/Platformer/Platformer - Current/worlds.lua",
+		"/C/Users/brown274212/Google Drive/Little App/Little App - Current/main.lua",
+		"/C/Users/brown274212/Desktop/composer test/main.lua",
+		"/C/Program Files/Corona Labs/Corona SDK/Resources/homescreen/templates/composer/main.lua",
+		"/C/Program Files/Corona Labs/Corona SDK/Resources/homescreen/templates/composer/scenetemplate.lua",
+		"/C/Program Files/Corona Labs/Corona SDK/Resources/homescreen/main.lua",
+		"/C/Users/lelan403825/Google Drive/Little App/Little App - Current/config.lua",
+		"/C/Users/lelan403825/Google Drive/Little App/Little App - Current/inputs.lua",
+		"/C/Users/lelan403825/Google Drive/Little App/Little App - Current/main.lua",
+		"/C/Users/brown274212/Google Drive/Little App/Little App - Current/Little App.sublime-project",
+		"/C/Users/brown274212/Google Drive/Little App/Little App - Current/Little App _ Jack.sublime-project",
+		"/C/Users/brown274212/Google Drive/Little App/Little App - Current/Little App _ Jack.sublime-workspace",
+		"/C/Users/brown274212/Google Drive/Little App/Little App - Current/Little App.sublime-workspace",
+		"/C/Users/brown274212/Google Drive/OUYA/OUYA-Corona/Platformer/Platformer - Current/game.lua",
+		"/C/Users/brown274212/Google Drive/OUYA/OUYA-Corona/Platformer/Platformer - Current/helpers.lua",
+		"/C/Users/brown274212/Google Drive/OUYA/OUYA-Corona/Platformer/Platformer - Current/inputs.lua",
+		"/C/Users/brown274212/Google Drive/OUYA/OUYA-Corona/Platformer/Platformer - Current/main.lua",
+		"/C/Users/brown274212/Google Drive/OUYA/OUYA-Corona/Platformer/Platformer - Current/buglist.txt",
+		"/C/Users/brown274212/Google Drive/OUYA/OUYA-Corona/Platformer/Platformer - Current/globals.lua",
+		"/C/Users/brown274212/Google Drive/OUYA/OUYA-Corona/Platformer/Platformer - Current/config.lua",
+		"/C/Users/brown274212/Google Drive/OUYA/OUYA-Corona/Platformer/Platformer - 2014-01-31/main.lua",
+		"/C/Users/brown274212/Google Drive/OUYA/OUYA-Corona/Platformer Project/Platformer Project - 2014-01-31/main.lua",
+		"/C/Users/brown274212/Google Drive/OUYA/OUYA-Corona/Platformer Project/Platformer Project - 2014-01-31/globals.lua",
+		"/C/Users/brown274212/Google Drive/OUYA/OUYA-Corona/Platformer Project/Platformer Project - 2014-01-31/inputs.lua",
+		"/C/Users/brown274212/Google Drive/OUYA/OUYA-Corona/Platformer Project/Platformer Project - 2014-01-31/buglist.txt",
+		"/C/Users/brown274212/Google Drive/OUYA/OUYA-Corona/Platformer Project/Platformer Project - 2014-01-31/helpers.lua",
+		"/C/Users/brown274212/Google Drive/OUYA/OUYA-Corona/Corona Project Template/main.lua",
+		"/C/Users/brown274212/Google Drive/OUYA/OUYA-Corona/Pong Project/Pong Project - Current/main.lua",
+		"/C/Users/brown274212/Google Drive/OUYA/OUYA-Corona/Corona Project Template/helpers.lua",
+		"/C/Users/brown274212/Google Drive/OUYA/OUYA-Corona/Pong Project/Pong Project - Breakdown/ponghit.wav",
+		"/C/Users/brown274212/Google Drive/OUYA/OUYA-Corona/Pong Project/Pong Project - Breakdown/paddlehit.wav",
+		"/C/Users/brown274212/Google Drive/OUYA/OUYA-Corona/Pong Project/Pong Project - Breakdown/game.lua",
+		"/C/Users/brown274212/Google Drive/OUYA/OUYA-Corona/Pong Project/Pong Project - Current/helpers.lua",
+		"/C/Users/brown274212/Google Drive/OUYA/OUYA-Corona/Pong Project/Pong Project - Current/build.settings",
+		"/C/Users/brown274212/Google Drive/OUYA/OUYA-Corona/Pong Project/Pong Project - Current/config.lua",
+		"/C/Users/brown274212/Google Drive/OUYA/OUYA-Corona/Pong Project - Copy/inputs.lua",
+		"/C/Users/brown274212/Google Drive/OUYA/OUYA-Corona/Pong Project/ui.lua",
+		"/C/Users/brown274212/Google Drive/OUYA/OUYA-Corona/Pong Project/globals.lua",
+		"/C/Users/brown274212/Google Drive/OUYA/OUYA-Corona/Pong Project/inputs.lua",
+		"/C/Users/brown274212/Google Drive/OUYA/OUYA-Corona/Pong Project/helper.lua",
+		"/C/Users/brown274212/Google Drive/OUYA/OUYA-Corona/Pong Project/main.lua",
+		"/C/Users/brown274212/Google Drive/OUYA/OUYA-Corona/Pong Project/helpers.lua",
+		"/C/Users/brown274212/Google Drive/OUYA/OUYA-Corona/Pong Project/buglist.txt",
+		"/C/Users/brown274212/Google Drive/OUYA/OUYA-Corona/Pong Project/game.lua",
+		"/C/Users/brown274212/Google Drive/OUYA/OUYA-Corona/Pong Project/Builds/Pong Project.apk",
+		"/C/Users/brown274212/Google Drive/OUYA/OUYA-Corona/Jack Test Project/inputs.lua",
+		"/C/Users/brown274212/Google Drive/OUYA/ouya-sdk-examples-master/Corona/VirtualController/helpers.lua",
+		"/C/Users/brown274212/Google Drive/OUYA/ouya-sdk-examples-master/Corona/VirtualController/ui.lua",
+		"/C/Users/brown274212/Google Drive/OUYA/Corona Code/Jack Test/build.settings",
+		"/C/Users/brown274212/Google Drive/OUYA/Corona Code/Jack Test/config.lua",
+		"/C/Users/brown274212/Google Drive/OUYA/Corona Code/Jack Test/main.lua",
+		"/C/Users/brown274212/Google Drive/OUYA/ouya-sdk-examples-master/Corona/VirtualController/main.lua",
+		"/C/Users/brown274212/.android/adb_usb.ini",
+		"/C/Users/brown274212/AppData/Roaming/Sublime Text 2/Packages/Corona Editor/README.md"
+	],
+	"find":
+	{
+		"height": 34.0
+	},
+	"find_in_files":
+	{
+		"height": 0.0,
+		"where_history":
+		[
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"handleButtonEvent",
+			"        --[[",
+			":",
+			"game",
+			"--",
+			"game",
+			"return false",
+			":",
+			"game",
+			"then"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"selected": 2,
+			"sheets":
+			[
+				{
+					"buffer": 0,
+					"file": "config.lua",
+					"settings":
+					{
+						"buffer_size": 490,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								188,
+								188
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Corona Editor/CoronaSDKLua.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "welcome.lua",
+					"settings":
+					{
+						"buffer_size": 4161,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								2499,
+								2499
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Corona Editor/CoronaSDKLua.tmLanguage",
+							"translate_tabs_to_spaces": false,
+							"word_separators": "/\\()\"'-:,;<>~!@#$%^&*|+=[]{}`~?"
+						},
+						"translation.x": 0.0,
+						"translation.y": 504.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "/C/Users/brown274212/Desktop/variablePassTest.lua",
+					"settings":
+					{
+						"buffer_size": 109,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Corona Editor/CoronaSDKLua.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 3,
+					"file": "screenSwap.lua",
+					"settings":
+					{
+						"buffer_size": 3417,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								937,
+								937
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Corona Editor/CoronaSDKLua.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true,
+							"word_separators": "/\\()\"'-:,;<>~!@#$%^&*|+=[]{}`~?"
+						},
+						"translation.x": 0.0,
+						"translation.y": 42.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 4,
+					"file": "template__scenes",
+					"settings":
+					{
+						"buffer_size": 2293,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1515,
+								1515
+							]
+						],
+						"settings":
+						{
+							"auto_name": "local composer = require( \"composer\" )",
+							"syntax": "Packages/Lua/Lua.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 462.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 5,
+					"file": "main.lua",
+					"settings":
+					{
+						"buffer_size": 2673,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								2673,
+								2673
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Corona Editor/CoronaSDKLua.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 126.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				}
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 0.0
+	},
+	"input":
+	{
+		"height": 30.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.exec":
+	{
+		"height": 130.0
+	},
+	"replace":
+	{
+		"height": 0.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"show_minimap": true,
+	"show_open_files": false,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 150.0,
+	"status_bar_visible": false
+}

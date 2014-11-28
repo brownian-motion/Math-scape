@@ -1,0 +1,100 @@
+/*
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+code.css
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+*/
+
+@import url(http://fonts.googleapis.com/css?family=Ubuntu+Mono:400,400italic);
+
+/*
+--------------------------------------------------------------------------------
+Mosopaced Font General Style
+--------------------------------------------------------------------------------
+*/
+
+code, pre, nanochrome-block *, nanochrome-block {
+	font-family: "Ubuntu Mono", monospace;
+	color: #CCCCFF;
+}
+
+/*
+--------------------------------------------------------------------------------
+Code Style
+--------------------------------------------------------------------------------
+*/
+
+code {
+	padding-left: 1px;
+	padding-right: 1px;
+	padding-top: 0px;
+	padding-bottom: 0px;
+	border: solid;
+	border-width: 1px;
+	border-color: rgb(60, 59, 58);
+	border-radius: 5px;
+	background-color: #2D2C2B;
+}
+
+/*
+--------------------------------------------------------------------------------
+Preformatted Text Style
+--------------------------------------------------------------------------------
+*/
+
+pre {
+	padding-left: 4px;
+	padding-right: 4px;
+	padding-top: 4px;
+	padding-bottom: 4px;
+	margin-left: 10px;
+	margin-right: 10px;
+}
+
+pre code {
+	padding-left: 6px;
+	padding-right: 6px;
+	padding-top: 6px;
+	padding-bottom: 6px;
+	overflow: auto;
+	tab-size: 2;
+	display: block;
+
+	scrollbar-arrow-color: rgb(255, 255, 0);
+	scrollbar-face-color: rgb(0, 0, 0);
+	scrollbar-3dlight-color: rgb(255, 255, 0);
+	scrollbar-darkshadow-color: rgb(255, 255, 0);
+	scrollbar-track-color: rgb(60, 60, 0);
+	scrollbar-base-color: #FFFF00;
+}
+
+/*
+--------------------------------------------------------------------------------
+Nanochrome Syntax Styles
+--------------------------------------------------------------------------------
+*/
+nanochrome-block nanochrome.keyword {
+	color: #0099FF;
+}
+
+nanochrome-block nanochrome.string {
+	color: #8888BB;
+}
+
+nanochrome-block nanochrome.comment {
+	color: #999999;
+	font-style: italic;
+}
+
+nanochrome-block nanochrome.number {
+	color: #FFFFFF;
+}
+
+nanochrome-block nanochrome.defined {
+	color: #00DDEE;
+}
+
+nanochrome-block nanochrome.operator {
+	color: #8888FF;
+}

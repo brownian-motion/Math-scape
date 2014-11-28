@@ -1,0 +1,15 @@
+CURRENT FEATURES:
+-----------------
+
+feature group
+	feature 1
+	feature 2
+
+
+VERSION HISTORY:
+----------------
+
+1.0
+	1.1
+		change 1
+		change 2

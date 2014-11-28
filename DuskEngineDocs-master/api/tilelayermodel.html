@@ -1,0 +1,40 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+	<title>Tile Layer | Dusk</title>
+	<link rel="stylesheet" href="../styles/lists.css">
+	<link rel="stylesheet" href="../styles/content-text.css">
+	<link rel="stylesheet" href="../styles/misc.css">
+	<link rel="stylesheet" href="../styles/code.css">
+</head>
+
+<body>
+	<a name="top"></a>
+	<div id="title">
+		<a class="back" href="../index.html">Back to Index</a>
+		<h2 class="page-title"></h2>
+	</div>
+	
+	<div class="content">
+		<h3 class="entry-title">Tile Layer Object Model</h3>
+		
+		<p>This is the object model for a Tile Layer object created from within <a class="code" href="buildmap.html"><code>dusk.buildMap</code></a> and existing in a <a href="mapmodel.html">Dusk Map</a>. Please note that this page does not include functions, but rather only properties.</p>
+
+		<ul>
+			<h4 class="list-title">Dusk Tile Layer</h4>
+			<li><code>layer.props</code> : <a href="propstable.html">Properties Table</a></li>
+			<li><code>layer._type</code> : Equal to the string "tile". This property is given to all layers in a map; by having one layer, you can know what kind it is.</li>
+			<li><code>layer._name</code> : The name specified in Tiled, found in the layer listing menu.</li>
+			<li><code>layer.xParallax</code> : Parallax ratio of the layer in the X-direction.</li>
+			<li><code>layer.yParallax</code> : Parallax ratio of the layer in the Y-direction.</li>
+			<li><code>layer.cameraTrackingEnabled</code> : Whether this layer moves with the camera's tracking. This property does not have any effect if set after the map is created; if you do not want the layer to move with the camera, set this property from within Tiled. </li>
+			<li><code>layer.tileCullingEnabled</code> : Whether this layer's tiles are culled. This property does not have any effect if set after the map is created; if you do not want the layer's tiles to be culled, set this property from within Tiled.</li>
+		</ul>
+	</div>
+
+	<script src="../scripts/nanochrome.js" type="text/javascript"></script>	
+	<footer></footer>
+</body>
+
+</html>

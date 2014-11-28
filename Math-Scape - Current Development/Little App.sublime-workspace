@@ -1,0 +1,696 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"display.conten",
+				"display.contentHeight"
+			],
+			[
+				"displa",
+				"display.contentWidth"
+			],
+			[
+				"label",
+				"labelColor"
+			],
+			[
+				"display.contentH",
+				"display.contentHeight	display"
+			],
+			[
+				"display.content",
+				"display.contentWidth	display"
+			],
+			[
+				"q",
+				"questionText"
+			],
+			[
+				"remove",
+				"removeSelf()	DisplayObject"
+			],
+			[
+				"title",
+				"titleText"
+			],
+			[
+				"sceneGr",
+				"sceneGroup:insert"
+			],
+			[
+				"pause",
+				"pauseOverlay"
+			],
+			[
+				"best",
+				"bestText"
+			],
+			[
+				"display.new",
+				"display.newText()	display"
+			],
+			[
+				"print",
+				"printGrid"
+			],
+			[
+				"pri",
+				"print()	global"
+			],
+			[
+				"star",
+				"start()	SpinnerWidget"
+			],
+			[
+				"titleText.fon",
+				"titleText.fontSize"
+			],
+			[
+				"cell.re",
+				"cell.rect"
+			],
+			[
+				"score",
+				"scoreText"
+			],
+			[
+				"font",
+				"fontSize"
+			],
+			[
+				"disp",
+				"display.contentHeight"
+			],
+			[
+				"displ",
+				"display.contentWidth"
+			],
+			[
+				"display.n",
+				"display.newText()	display"
+			],
+			[
+				"setSe",
+				"setSequence()	SpriteObject"
+			],
+			[
+				"graphics",
+				"graphics.newImageSheet()	graphics"
+			],
+			[
+				"fore",
+				"force"
+			],
+			[
+				"globals.",
+				"globals.RUN_VELOCITY"
+			],
+			[
+				"end",
+				"end	Keyword"
+			],
+			[
+				"getVe",
+				"getLinearVelocity()	Body"
+			],
+			[
+				"helpers.",
+				"helpers.object2Name"
+			],
+			[
+				"true",
+				"true"
+			],
+			[
+				"then",
+				"then"
+			],
+			[
+				"else",
+				"event.localPlayerScore	gameNetwork"
+			],
+			[
+				"nil",
+				"nil	Keyword"
+			],
+			[
+				"KeyEv",
+				"KeyEvent.KEYCODE_DPAD_UP"
+			]
+		]
+	},
+	"buffers":
+	[
+		{
+			"file": "tiles.lua",
+			"settings":
+			{
+				"buffer_size": 12791,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "2048.lua",
+			"settings":
+			{
+				"buffer_size": 46838,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "pictureGame.lua",
+			"settings":
+			{
+				"buffer_size": 0,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "pictureGame_tmp.lua",
+			"settings":
+			{
+				"buffer_size": 0,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "helpers.lua",
+			"settings":
+			{
+				"buffer_size": 4877,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "globals.lua",
+			"settings":
+			{
+				"buffer_size": 1644,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "highScores.lua",
+			"settings":
+			{
+				"buffer_size": 3686,
+				"line_ending": "Unix"
+			}
+		}
+	],
+	"build_system": "Packages/Corona Editor/Corona SDK.sublime-build",
+	"command_palette":
+	{
+		"height": 58.0,
+		"selected_items":
+		[
+			[
+				"install",
+				"Package Control: Install Package"
+			]
+		],
+		"width": 400.0
+	},
+	"console":
+	{
+		"height": 125.0
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"file_history":
+	[
+		"/C/Users/lelan403825/Google Drive/Little App/Little App - Current/pauseOverlay.lua",
+		"/C/Users/lelan403825/Google Drive/Little App/Little App - Current/levels/level1/level1.lua",
+		"/C/Users/lelan403825/Google Drive/Little App/Little App - Current/levels/tileTestLevel.lua",
+		"/C/Users/lelan403825/Google Drive/Little App/Little App - Current/2048.lua",
+		"/C/Users/lelan403825/Google Drive/Little App/Little App - Current/pictureGame_tmp.lua",
+		"/C/Users/lelan403825/Google Drive/Little App/Little App - Current/highScores.lua",
+		"/C/Users/lelan403825/Google Drive/Little App/Little App - Current/helpers.lua",
+		"/C/Users/lelan403825/Google Drive/Little App/Little App - Current/globals.lua",
+		"/C/Users/lelan403825/Google Drive/Little App/Little App - Current/options.lua",
+		"/C/Users/lelan403825/Google Drive/Little App/Little App - Current/main.lua",
+		"/C/Users/lelan403825/Google Drive/Little App/Little App - Current/pictureGame.lua",
+		"/C/Users/lelan403825/Google Drive/Little App/Little App - Current/minigames.lua",
+		"/C/Users/lelan403825/Google Drive/Little App/Little App - Current/asteroids.lua",
+		"/C/Users/lelan403825/Google Drive/Little App/Little App - Current/levels/pauseOverlay.lua",
+		"/C/Users/lelan403825/Google Drive/Little App/Little App - Current/2048_orig.lua",
+		"/C/Users/lelan403825/Google Drive/Little App/Little App - Current/inputs.lua",
+		"/C/Users/lelan403825/Google Drive/Little App/Little App - Current/game.lua",
+		"/C/Users/lelan403825/Google Drive/Little App/Little App - Current/2048Game_old.lua",
+		"/C/Users/lelan403825/Google Drive/Little App/Little App - Current/2048 Game - REMOVED FOR COMPILING/2048.js",
+		"/C/Users/lelan403825/Google Drive/Little App/Little App - Current/2048_old.lua",
+		"/C/Users/lelan403825/Google Drive/OUYA/OUYA-Corona/Platformer/Platformer - Current/main.lua",
+		"/C/Users/lelan403825/Google Drive/OUYA/OUYA-Corona/Platformer/Platformer - Current/helpers.lua",
+		"/C/Users/lelan403825/Google Drive/OUYA/OUYA-Corona/Platformer/Platformer - Current/inputs.lua",
+		"/C/Users/lelan403825/Google Drive/Little App/Little App - Current/2048Game.lua",
+		"/C/Users/lelan403825/Google Drive/Little App/Little App - Current/2048 Game - REMOVED FOR COMPILING/2048Game.lua",
+		"/C/Users/lelan403825/Google Drive/Little App/Little App - Current/screenSwap.lua",
+		"/C/Users/lelan403825/Google Drive/Little App/Little App - Current/menu.lua",
+		"/C/Users/lelan403825/Google Drive/Little App/Little App - Current/comingSoon.lua",
+		"/C/Users/lelan403825/Google Drive/Little App/Little App - Current/2048.js",
+		"/C/Users/lelan403825/Google Drive/OUYA/OUYA-Corona/Platformer/Platformer - Current/globals.lua",
+		"/C/Users/lelan403825/Google Drive/Little App/Little App - Current/welcome.lua",
+		"/C/Users/lelan403825/Google Drive/Little App/Little App - Current/main1.lua",
+		"/C/Users/lelan403825/Google Drive/Little App/Little App - Current/config.lua",
+		"/C/Users/brown274212/Google Drive/Little App/Little App - Current/Little App.sublime-project",
+		"/C/Users/brown274212/Google Drive/Little App/Little App - Current/Little App _ Jack.sublime-project",
+		"/C/Users/brown274212/Google Drive/Little App/Little App - Current/Little App _ Jack.sublime-workspace",
+		"/C/Users/brown274212/Google Drive/Little App/Little App - Current/Little App.sublime-workspace",
+		"/C/Users/brown274212/Google Drive/OUYA/OUYA-Corona/Platformer/Platformer - Current/game.lua",
+		"/C/Users/brown274212/Google Drive/OUYA/OUYA-Corona/Platformer/Platformer - Current/helpers.lua",
+		"/C/Users/brown274212/Google Drive/OUYA/OUYA-Corona/Platformer/Platformer - Current/worlds.lua",
+		"/C/Users/brown274212/Google Drive/OUYA/OUYA-Corona/Platformer/Platformer - Current/inputs.lua",
+		"/C/Users/brown274212/Google Drive/OUYA/OUYA-Corona/Platformer/Platformer - Current/main.lua",
+		"/C/Users/brown274212/Google Drive/OUYA/OUYA-Corona/Platformer/Platformer - Current/buglist.txt",
+		"/C/Users/brown274212/Google Drive/OUYA/OUYA-Corona/Platformer/Platformer - Current/globals.lua",
+		"/C/Users/brown274212/Google Drive/OUYA/OUYA-Corona/Platformer/Platformer - Current/config.lua",
+		"/C/Users/brown274212/Google Drive/OUYA/OUYA-Corona/Platformer/Platformer - 2014-01-31/main.lua",
+		"/C/Users/brown274212/Google Drive/OUYA/OUYA-Corona/Platformer Project/Platformer Project - 2014-01-31/main.lua",
+		"/C/Users/brown274212/Google Drive/OUYA/OUYA-Corona/Platformer Project/Platformer Project - 2014-01-31/globals.lua",
+		"/C/Users/brown274212/Google Drive/OUYA/OUYA-Corona/Platformer Project/Platformer Project - 2014-01-31/inputs.lua",
+		"/C/Users/brown274212/Google Drive/OUYA/OUYA-Corona/Platformer Project/Platformer Project - 2014-01-31/buglist.txt",
+		"/C/Users/brown274212/Google Drive/OUYA/OUYA-Corona/Platformer Project/Platformer Project - 2014-01-31/helpers.lua",
+		"/C/Users/brown274212/Google Drive/OUYA/OUYA-Corona/Corona Project Template/main.lua",
+		"/C/Users/brown274212/Google Drive/OUYA/OUYA-Corona/Pong Project/Pong Project - Current/main.lua",
+		"/C/Users/brown274212/Google Drive/OUYA/OUYA-Corona/Corona Project Template/helpers.lua",
+		"/C/Users/brown274212/Google Drive/OUYA/OUYA-Corona/Pong Project/Pong Project - Breakdown/ponghit.wav",
+		"/C/Users/brown274212/Google Drive/OUYA/OUYA-Corona/Pong Project/Pong Project - Breakdown/paddlehit.wav",
+		"/C/Users/brown274212/Google Drive/OUYA/OUYA-Corona/Pong Project/Pong Project - Breakdown/game.lua",
+		"/C/Users/brown274212/Google Drive/OUYA/OUYA-Corona/Pong Project/Pong Project - Current/helpers.lua",
+		"/C/Users/brown274212/Google Drive/OUYA/OUYA-Corona/Pong Project/Pong Project - Current/build.settings",
+		"/C/Users/brown274212/Google Drive/OUYA/OUYA-Corona/Pong Project/Pong Project - Current/config.lua",
+		"/C/Users/brown274212/Google Drive/OUYA/OUYA-Corona/Pong Project - Copy/inputs.lua",
+		"/C/Users/brown274212/Google Drive/OUYA/OUYA-Corona/Pong Project/ui.lua",
+		"/C/Users/brown274212/Google Drive/OUYA/OUYA-Corona/Pong Project/globals.lua",
+		"/C/Users/brown274212/Google Drive/OUYA/OUYA-Corona/Pong Project/inputs.lua",
+		"/C/Users/brown274212/Google Drive/OUYA/OUYA-Corona/Pong Project/helper.lua",
+		"/C/Users/brown274212/Google Drive/OUYA/OUYA-Corona/Pong Project/main.lua",
+		"/C/Users/brown274212/Google Drive/OUYA/OUYA-Corona/Pong Project/helpers.lua",
+		"/C/Users/brown274212/Google Drive/OUYA/OUYA-Corona/Pong Project/buglist.txt",
+		"/C/Users/brown274212/Google Drive/OUYA/OUYA-Corona/Pong Project/game.lua",
+		"/C/Users/brown274212/Google Drive/OUYA/OUYA-Corona/Pong Project/Builds/Pong Project.apk",
+		"/C/Users/brown274212/Google Drive/OUYA/OUYA-Corona/Jack Test Project/inputs.lua",
+		"/C/Users/brown274212/Google Drive/OUYA/ouya-sdk-examples-master/Corona/VirtualController/helpers.lua",
+		"/C/Users/brown274212/Google Drive/OUYA/ouya-sdk-examples-master/Corona/VirtualController/ui.lua",
+		"/C/Users/brown274212/Google Drive/OUYA/Corona Code/Jack Test/build.settings",
+		"/C/Users/brown274212/Google Drive/OUYA/Corona Code/Jack Test/config.lua",
+		"/C/Users/brown274212/Google Drive/OUYA/Corona Code/Jack Test/main.lua",
+		"/C/Users/brown274212/Google Drive/OUYA/ouya-sdk-examples-master/Corona/VirtualController/main.lua",
+		"/C/Users/brown274212/.android/adb_usb.ini",
+		"/C/Users/brown274212/AppData/Roaming/Sublime Text 2/Packages/Corona Editor/README.md"
+	],
+	"find":
+	{
+		"height": 38.0
+	},
+	"find_in_files":
+	{
+		"height": 0.0,
+		"where_history":
+		[
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"endScreen",
+			"pauseover",
+			"picture",
+			"fade",
+			"endscreen",
+			"3",
+			"endScreen",
+			"pauseb",
+			"pausebutton",
+			"eventListener",
+			"endscreen",
+			"save",
+			"best",
+			"backButton",
+			"and",
+			"highestlowestValue",
+			"highest",
+			"gameover",
+			"helvetica",
+			"~",
+			"combineCells",
+			"timer.performWithDelay",
+			"ANIMATION_DELAY_SLIDE",
+			"timerfunction",
+			"timer function",
+			"animateSlide",
+			"performWithDelay",
+			"animateSlide",
+			"animateslide",
+			"shiftUp",
+			"move",
+			"timer",
+			"birthanima",
+			"birthanimation",
+			"timer",
+			"EMPTY_CELL",
+			"size",
+			"timer",
+			"(\"_",
+			"rgb",
+			"content",
+			"!",
+			"--",
+			"get",
+			"getHeight",
+			"getWidth",
+			"grid.get",
+			"grid.set",
+			"grid",
+			"new Color",
+			"remove(",
+			"add(",
+			"add",
+			"new Text",
+			"VAL_TO_COLOR[",
+			"VAL_TO_COLOR.",
+			"keyH",
+			"keyDown",
+			"keyDownMethod",
+			";",
+			"for",
+			"var",
+			"//",
+			"60",
+			"options",
+			"Options",
+			"options",
+			"highScores",
+			"highscores",
+			"minigames",
+			"Minigames",
+			"minigames",
+			"\n-- minigames",
+			"minigames.lua",
+			"comingSoon",
+			"game",
+			"menu",
+			"welcome",
+			"menu",
+			"        --[[",
+			":",
+			"game",
+			"--",
+			"game",
+			"return false",
+			":",
+			"game",
+			"then"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"selected": 0,
+			"sheets":
+			[
+				{
+					"buffer": 0,
+					"file": "tiles.lua",
+					"settings":
+					{
+						"buffer_size": 12791,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Corona Editor/CoronaSDKLua.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true,
+							"word_separators": "/\\()\"'-:,;<>~!@#$%^&*|+=[]{}`~?"
+						},
+						"translation.x": 0.0,
+						"translation.y": 390.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "2048.lua",
+					"settings":
+					{
+						"buffer_size": 46838,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Corona Editor/CoronaSDKLua.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 1462.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "pictureGame.lua",
+					"settings":
+					{
+						"buffer_size": 0,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Corona Editor/CoronaSDKLua.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true,
+							"word_separators": "/\\()\"'-:,;<>~!@#$%^&*|+=[]{}`~?"
+						},
+						"translation.x": 0.0,
+						"translation.y": 39.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 3,
+					"file": "pictureGame_tmp.lua",
+					"settings":
+					{
+						"buffer_size": 0,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Corona Editor/CoronaSDKLua.tmLanguage",
+							"translate_tabs_to_spaces": false,
+							"word_separators": "/\\()\"'-:,;<>~!@#$%^&*|+=[]{}`~?"
+						},
+						"translation.x": 0.0,
+						"translation.y": 351.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 4,
+					"file": "helpers.lua",
+					"settings":
+					{
+						"buffer_size": 4877,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1750,
+								1750
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Corona Editor/CoronaSDKLua.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true,
+							"word_separators": "/\\()\"'-:,;<>~!@#$%^&*|+=[]{}`~?"
+						},
+						"translation.x": 0.0,
+						"translation.y": 312.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 5,
+					"file": "globals.lua",
+					"settings":
+					{
+						"buffer_size": 1644,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Corona Editor/CoronaSDKLua.tmLanguage",
+							"word_separators": "/\\()\"'-:,;<>~!@#$%^&*|+=[]{}`~?"
+						},
+						"translation.x": 0.0,
+						"translation.y": 156.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 6,
+					"file": "highScores.lua",
+					"settings":
+					{
+						"buffer_size": 3686,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1877,
+								1877
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Corona Editor/CoronaSDKLua.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 1053.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				}
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 0.0
+	},
+	"input":
+	{
+		"height": 30.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.exec":
+	{
+		"height": 137.0
+	},
+	"replace":
+	{
+		"height": 0.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"show_minimap": true,
+	"show_open_files": false,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 178.0,
+	"status_bar_visible": false
+}
