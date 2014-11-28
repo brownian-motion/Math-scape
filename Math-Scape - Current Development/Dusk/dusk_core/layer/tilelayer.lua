@@ -158,6 +158,18 @@ function tilelayer.createLayer(mapData, data, dataIndex, tileIndex, imageSheets,
 			addProperties(tileProps, "object", tile)
 			addProperties(tileProps, "props", tile.props)
 
+			-- Add animation -- Custom edit by Jack Brown
+			if(tile.props.animation) then
+				if(tile.props.animation.alternateGID) then
+					tile.props.animation.alternateGID = tonumber(tile.props.animation.alternateGID) + 1; --for some reason, the values of GIDs are off by 1 in Dusk
+					tile.alternateGID = function(self)
+						local currentGID = self.GID;
+						self:setFrame( self.props.animation.alternateGID );
+						self.props.animation.alternateGID = currentGID;
+					end
+				end
+			end
+
 			tile.tileX, tile.tileY = x, y
 			if not layerTiles[x] then layerTiles[x] = {} end
 			layerTiles[x][y] = tile

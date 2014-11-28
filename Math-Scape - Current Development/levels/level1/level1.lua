@@ -408,13 +408,16 @@ function level.spritePreCollision(event)
         event.contact.isEnabled = false; --disables this particular collision
     else
         local vx,vy = sprite:getLinearVelocity();
-        if(other.y > sprite.y and vy > 0) then --if(moving down and colliding with a block below me) then (not jumping) end
+        if(other.y > sprite.y and vy > 0 and math.abs(sprite.x-other.x)<sprite.width/2) then --if(moving down and colliding with a block below me) then (not jumping) end
             sprite.isJumping = false;
             sprite.numJumps = 0;
             print(other.y .. " " .. sprite.y .. " " .. tostring(other._type));
-            sprite.y = other.y - other.height*other.yScale - sprite.height*sprite.yScale/2;
+            timer.performWithDelay( 50, function()
+            	local CORRECTIVE_FORCE_STRENGTH = 0.01;
+            	sprite:applyForce(CORRECTIVE_FORCE_STRENGTH*(sprite.x-other.x)/math.abs(sprite.x-other.x),CORRECTIVE_FORCE_STRENGTH*(sprite.y-other.y)/math.abs(sprite.y-other.y),sprite.x,sprite.y) end
+            );
         end
-        sprite.updateSequence();
+        sprite:updateSequence();
     end
 end
 
@@ -601,31 +604,42 @@ function level.enterDoor( door )
         if(door.toDoor and string.len(door.toDoor) > 0) then
             print("found a request for a door! Name: "..door.toDoor);
             for layerIndex,layer in ipairs(newMapData.layers) do
-                if(not(spriteDestinationDoor) and layer.objects) then
-                    for index,object in ipairs(layer.objects) do
-                        print("Found an object: "..object.name);
-                        if(object.name == door.toDoor) then
-                            print("found the door!");
-                            spriteDestinationDoor = object;
-                            spriteDestination = {   x=(object.x + 0.5*object.width)/newMapData.stats.tileHeight,
-                                                    y=object.y/newMapData.stats.tileHeight
-                                                };
-                            break;
-                        end
-                    end
-                end
+                spriteDestinationDoor = spriteDestinationDoor or layer.object(door.toDoor);
+                if(spriteDestinationDoor) then
+
+	                print("found the door!");
+	                spriteDestinationDoor = object;
+	                spriteDestination = {   x=(object.x + 0.5*object.width)/newMapData.stats.tileHeight,
+	                                        y=object.y/newMapData.stats.tileHeight
+	                                    };
+	                break;
+            	end
             end
         end
 
-        helpers.print_traversal(spriteDestination,"spriteDestination");
-        physics.pause();
-        local newMap = dusk.buildMap( newMapData );
-        level.map:destroy();  --take out the current map
-        level.map = newMap;  --apply the new map
-        level.layer["map"]:insert(newMap);
-        level.initializeSpritePosition( newMap, sprite, spriteDestination )
-        level:setUpSpecificMap(level.map, door.toMap);
-        physics.start();
+        --start the animation of entering a door.
+        local doorLayer = level.map.layer["Background_Doors"];
+        local doorLoc = {}; doorLoc.x, doorLoc.y = doorLayer.pixelsToTiles(door.x,door.y)
+	    doorLayer._unlockTile(doorLoc.x, doorLoc.y);
+	    print("   +++++    ");
+	    helpers.print_traversal(doorLayer.tile(doorLoc.x, doorLoc.y));
+	    print("   +++++    ");
+	    doorLayer.tile(doorLoc.x, doorLoc.y):alternateGID();
+
+        --move into the new map AFTER the animation has been started
+        timer.performWithDelay( globals.DOOR_ENTRY_ANIMATION_DELAY, 
+        	function( event )
+		        helpers.print_traversal(spriteDestination,"spriteDestination");
+		        physics.pause();
+		        local newMap = dusk.buildMap( newMapData );
+		        level.map:destroy();  --take out the current map
+		        level.map = newMap;  --apply the new map
+		        level.layer["map"]:insert(newMap);
+		        level.initializeSpritePosition( newMap, sprite, spriteDestination )
+		        level:setUpSpecificMap(level.map, door.toMap);
+		        physics.start();
+	    	end
+	    );
         
     end
 end

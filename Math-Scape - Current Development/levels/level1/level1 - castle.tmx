@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<map version="1.0" orientation="orthogonal" width="100" height="100" tilewidth="32" tileheight="32">
+<map version="1.0" orientation="orthogonal" renderorder="right-down" width="100" height="100" tilewidth="32" tileheight="32">
  <properties>
-  <property name="startLocation" value="!json! { &quot;x&quot;:13, &quot;y&quot;:47 }"/>
+  <property name="startLocation" value="!json! { &quot;x&quot;:13, &quot;y&quot;:54 }"/>
  </properties>
  <tileset firstgid="1" name="Doors" tilewidth="32" tileheight="32">
   <image source="../../assets/tiles/Doors_Tileset.png" width="128" height="256"/>
@@ -362,12 +362,12 @@
  </tileset>
  <layer name="Background" width="100" height="100">
   <data encoding="base64" compression="zlib">
-   eJzt1SEOgDAUBUHuguH+J8QgEYiGLmU2eb7piL9tkiRJkiRJkiRJkiRJkiRJkmodk6b7eLTi0YpHKx6teLTi0YpHKx6teLTi0YpHKx6teLzT0z+Y5WE8auPRGo/WeLS2msd+bfY7ePAwHquPR2s8WhvtcXdPv35jefx3oz2Mx0rj0RqP1ni0xqM1Hq3xaI1Hazxa49Eaj9Z4tMajNR6t8WiNR2s8WuPRGo/WeLTGozUerfFojUdrPFrj0RqP1ni0xqM1Hq3xaI1Hazxa49Eaj9Z4tMajNR6t8WiNR2s8WuPRGo/WeMzbCX5wnoI=
+   eJzt1SEOgDAABEH+goH/fxCDJAEMXWA2Ods0HdFpkiRJkiRJkiRJkiRJkiRJklRrGTQdx6MVj1Y8WvFoxaMVj1Y8WvFoxaMVj1Y8WvFoxeOZrr7BKA/jURuP1ni0xqO1r3nM+0bfgwcP4/H18WiNR2tnHuvN847+07f/sTz+uzMP4/Hn8WiNR2s8WuPRGo/WeLTGozUerfFojUdrPFrj0RqP1ni0xqM1Hq3xaI1Hazxa49Eaj9Z4tMajNR6t8WiNR2s8WuPRGo/WeLTGozUerfFojUdrPFrj0RqP1ni0xqM1Hq3xaI1HazzGbQMPZ56E
   </data>
  </layer>
  <layer name="Background_Doors" width="100" height="100">
   <data encoding="base64" compression="zlib">
-   eJztzisOwDAMREH3m4KA3P+0NSoKrhVpRnpk0UYAAAAAAAAAAAAAAAAAAAAAAACwui3bq0/wubK7+gQALO7IzsnWC74Q0bJnso2CLwAAAAAAAAAAAAAAAAAAAAAA8IcX5usASw==
+   eJztzisOwCAAA1A29hOI3f+0Q6FQhAQW3ktqmoqGAAAAAAAAAAAAAAAAAAAAAAAAwN9tOfvoExRnzjX6BABMJjbsj0qX+txZ3t2wfyrd2+cOAAAAAAAAAAAAAAAAAAAAAABM5wO4gABV
   </data>
  </layer>
  <layer name="Midground" width="100" height="100">
@@ -380,7 +380,7 @@
    eJzt10sKgzAUhlG30CW5w0JH3a0IETpIfTXmXur54MyEqL8Th0GSJEmSJEmSJEmSJEmSJElSr0YAAADY8K6Ivqc7m9//Z/awB/bIyh652CMXe+Rij1zskUv0HrX/0d6iN8i2R+uW97z32ugNtvbo+Q3aY98eLbOHPexx7pntEbPHmtb90x61XsWvPYqrO3KOPa5v7ZxnsZRxj7uL3gAAAAAAAAAAAAAAAAAAAAAA4JsJRgkA+Q==
   </data>
  </layer>
- <objectgroup color="#a4a4a4" name="Object Layer 1" width="100" height="100" opacity="0">
+ <objectgroup color="#a4a4a4" name="Object Layer 1" opacity="0">
   <object name="PrisonDoor" type="PuzzleDoor" x="1184" y="1696" width="128" height="64">
    <properties>
     <property name="difficulty" value="3"/>
@@ -415,7 +415,7 @@
   <object name="Guard Sprite 1" type="SpriteInitializer" x="896" y="1696" width="32" height="64"/>
   <object name="Prisoner Sprite" type="SpriteInitializer" x="992" y="1696" width="32" height="64"/>
  </objectgroup>
- <objectgroup name="Object Layer 2" width="100" height="100">
+ <objectgroup name="Object Layer 2">
   <object name="JumpBoots" type="PowerUp" gid="33" x="2272" y="1728" width="64" height="32"/>
  </objectgroup>
 </map>

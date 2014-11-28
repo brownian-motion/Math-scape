@@ -96,6 +96,10 @@ local function getProperties(data, objPrefix, isLayer)
 		elseif key:match("^props:") then
 			insertionTable = p.props
 			k = key:sub(6)
+		--insert check for animation here
+		elseif key:match("^animation:") then
+			insertionTable = p.props;
+			k = key:sub(0);
 		else
 			if isLayer then
 				if key:match("^" .. objPrefix .. ":") then
