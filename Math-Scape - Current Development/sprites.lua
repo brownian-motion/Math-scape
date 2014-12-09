@@ -52,7 +52,7 @@ function sprites:jump( event )
 	end]]--
 	if(not self.isJumping) then self.numJumps = 0; end
 	if(not self.isJumping or (self.canDoubleJump and self.numJumps < 2)) then
-		if(self.sequence=="walking left" or self.sequence=="standing left") then
+		if(self.sequence=="walking left" or self.sequence=="standing left" or self.sequence=="jumping left") then
 			self:setSequence( "jumping left" )
 		else
 			self:setSequence( "jumping right" )
@@ -61,9 +61,7 @@ function sprites:jump( event )
 		self:play()
 		self.numJumps = self.numJumps + 1;
 		self.isJumping = true;
-	end
-
-	
+	end	
 end
 
 --[[function sprites:jumpLeft( event )

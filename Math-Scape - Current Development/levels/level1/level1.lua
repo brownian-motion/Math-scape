@@ -413,7 +413,8 @@ function level.spritePreCollision(event)
             sprite.numJumps = 0;
             print(other.y .. " " .. sprite.y .. " " .. tostring(other._type));
             timer.performWithDelay( 50, function()
-            	local CORRECTIVE_FORCE_STRENGTH = 0.01;
+                --this is to prevent the princess from getting stuck on the floor as she walks
+            	local CORRECTIVE_FORCE_STRENGTH = 0.01; 
             	sprite:applyForce(CORRECTIVE_FORCE_STRENGTH*(sprite.x-other.x)/math.abs(sprite.x-other.x),CORRECTIVE_FORCE_STRENGTH*(sprite.y-other.y)/math.abs(sprite.y-other.y),sprite.x,sprite.y) end
             );
         end
@@ -586,6 +587,11 @@ function level.enterDoor( door )
         return false;
     end
 
+    if(door._type == "SlidingDoor" and not door.ignore) then
+        --animate the tiles comprising the door sliding up
+        return true;
+    end
+
     --local spriteDestination = door.toLocation or newMap.startLocation
     if(not(door.toMap) or door.toMap == "") then
         --staying in same map
@@ -616,15 +622,16 @@ function level.enterDoor( door )
             	end
             end
         end
+        --this now assumes that we have definitely found a door; otherwise, it sends us to (0,0)
 
         --start the animation of entering a door.
         local doorLayer = level.map.layer["Background_Doors"];
         local doorLoc = {}; doorLoc.x, doorLoc.y = doorLayer.pixelsToTiles(door.x,door.y)
 	    doorLayer._unlockTile(doorLoc.x, doorLoc.y);
-	    print("   +++++    ");
-	    helpers.print_traversal(doorLayer.tile(doorLoc.x, doorLoc.y));
-	    print("   +++++    ");
-	    doorLayer.tile(doorLoc.x, doorLoc.y):alternateGID();
+	    --print("   +++++    ");
+	    --helpers.print_traversal(doorLayer.tile(doorLoc.x, doorLoc.y));
+	    --print("   +++++    ");
+	    doorLayer.tile(doorLoc.x, doorLoc.y):setAlternateGID();
 
         --move into the new map AFTER the animation has been started
         timer.performWithDelay( globals.DOOR_ENTRY_ANIMATION_DELAY, 
