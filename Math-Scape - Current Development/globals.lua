@@ -45,4 +45,8 @@ globals.pixelsPerMeter = { default = 100, spriteTestLevel = 80, tileTestLevel = 
 globals.DOOR_ENTRY_ANIMATION_DELAY = 2000; --2 seconds to enter door
 globals.DOOR_EXIT_ANIMATION_DELAY = 1000; --1 second to enter the level from a door
 
+--these are keys to use when accessing composer for the current level's name and number
+globals.GET_CURRENT_LEVEL_NAME = "getCurrentLevelName"
+globals.GET_CURRENT_LEVEL_NUMBER = "getCurrentLevelNumber"
+
 return globals;
