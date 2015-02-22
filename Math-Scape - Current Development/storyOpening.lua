@@ -7,6 +7,7 @@
 local storyOpening = {}
 local composer = require("composer")
 local level1 = require("levels.level1.level1")
+local levelEngine = require("levels.level_engine")
 local sprites = require "sprites";
 storyOpening.scene = composer.newScene("storyOpening")
 
@@ -164,7 +165,10 @@ function storyOpening.scene:create(event)
 		sheet = globals.buttonSheet,
 		defaultFrame = 1,
 		overFrame = 2,
-		onEvent = function(event) if(event.phase == "ended") then composer.gotoScene("level1") end end,
+		onEvent = function(event) if(event.phase == "ended") then 
+			composer.setVariable(globals.GET_CURRENT_LEVEL_NAME,"level1");
+			composer.setVariable(globals.GET_CURRENT_LEVEL_NUMBER,1);
+			composer.gotoScene("story mode"); end end,
 	}
 	storyOpening.level1Button:setFillColor( .8,.3,.3 )
 	storyOpening.level1Button:setEnabled( false )

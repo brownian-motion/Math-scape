@@ -676,7 +676,6 @@ function level.scene:hide( event )
         Runtime:removeEventListener( "enterFrame", level.gameLoop )
         physics.pause()
         system.deactivate( "multitouch" )
-        --Fade out music
         audio.fadeOut({channel="1",time=1000})
         audio.stop()
     elseif ( phase == "did" ) then

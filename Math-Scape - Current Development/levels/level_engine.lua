@@ -14,32 +14,10 @@ local composer = require( "composer" )
 local physics = require( "physics" )
 local sprites = require( "sprites" )
 local dusk = require( "Dusk.Dusk")
---local lib_data = require( "Dusk.dusk_core.load.data" )
 local pauseOverlay = require( "pauseOverlay" )
 
 --initialize the level object
 local level = {}
---[[
---These will be set in the :create constructor using composer.getVariable()
-level.num = 1;
-level.name = "level"..level.num;
---]]
---[[
-level.properties = {};
-local properties_filename = "levels/"..level.name.."/"..level.name.."-properties.json";
-if(system.pathForFile( properties_filename )) then
-    --if properties found:
-    level.properties.filename = properties_filename;
-    level.properties = lib_data.get(level.properties.filename);
-    --helpers.print_traversal(level.properties); --debug
-else
-    --if there are no properties, set defaults:
-    level.properties.filename = nil;
-end
-level.properties.startingMap = level.properties.startingMap or (level.name..".json");
-print( level.properties.startingMap );
---helpers.print_traversal(level,"level");
---]]
 
 level.scene = composer.newScene("story mode")
 
@@ -50,8 +28,6 @@ level.scene = composer.newScene("story mode")
 -- local forward references should go here
 
 -- -------------------------------------------------------------------------------
-
-local pixelsPerMeter --= globals.pixelsPerMeter[level.name]
 
 -- "scene:create()"
 function level.scene:create( event )
@@ -64,7 +40,7 @@ function level.scene:create( event )
     --DO NOT add physics objects before this!
     --
     physics.start();
-    physics.setScale( pixelsPerMeter );
+    physics.setScale( level.pixelsPerMeter );
     physics.setGravity(0,9.8*1.5);
     --]]
 
@@ -105,33 +81,6 @@ function level.scene:create( event )
     --this is also the same reason we don't define it outside of this method
     
     --level.setupPhysics(map);
-
-    
-
-
-    --if( system.pathForFile("levels/StickSprite.png") == nil) then print "nil file" else print "good file" end
-    --
-    local spriteSheet = graphics.newImageSheet( "assets/sprites/princess.png", {width = 23, height = 35, numFrames = 22, sheetContentHeight = 70, sheetContentWidth = 253} )
-    local sequenceData = {
-        {name="standing left", frames={8}},
-        {name="walking left", frames={12,13}, time=500, loopCount=0},
-        {name="walking right", frames={1,2}, time=500, loopCount=0},
-        {name="standing right", frames={19}},
-        {name="jumping", frames={1,3,4,5,6,7}, time=750, loopCount=1, loopDirection="bounce"},
-        {name="jumping right", frames={1,3,4,5,6,7}, time=750, loopCount=1, loopDirection="bounce"},
-        {name="jumping left", frames={12,14,15,16,17,18}, time=750, loopCount=1, loopDirection="bounce"},
-    }  --]] 
-    --[[
-    local spriteSheetRight = graphics.newImageSheet("assets/sprites/yasuko_sheet.png", {width=18,height=35,numFrames=2,sheetContentHeight=105,sheetContentWidth=128})
-    
-    local spriteSheetLeft = graphics.newImageSheet("assets/sprites/yasuko_sheet_left.png", {width=18,height=35,numFrames=2,sheetContentHeight=105,sheetContentWidth=128}) 
-    local sequenceData = {
-        {name="walking left", sheet=spriteSheetLeft, frames={3}},
-        {name="walking right", sheet=spriteSheetRight, frames={2}},
-        {name="standing left", sheet=spriteSheetLeft, frames={2}},
-        {name="standing right", sheet=spriteSheetRight, frames={7}},
-    }--]]
-    --local sprite = display.newSprite( spriteSheetRight, sequenceData )
 
     --
     generatePlayerCharacter();
@@ -218,7 +167,6 @@ function generateGUI()
     buttonGui:insert(level.pauseButton)
     level.pauseButton:setFillColor(.5,.5,.9)
 
-	level.buttonGui
 	level.leftButton = widget.newButton{
         --parent = sceneGroup,
         x = 200, 
@@ -275,6 +223,17 @@ function generateGUI()
 end
 
 function generatePlayerCharacter()
+    --
+    local spriteSheet = graphics.newImageSheet( "assets/sprites/princess.png", {width = 23, height = 35, numFrames = 22, sheetContentHeight = 70, sheetContentWidth = 253} )
+    local sequenceData = {
+        {name="standing left", frames={8}},
+        {name="walking left", frames={12,13}, time=500, loopCount=0},
+        {name="walking right", frames={1,2}, time=500, loopCount=0},
+        {name="standing right", frames={19}},
+        {name="jumping", frames={1,3,4,5,6,7}, time=750, loopCount=1, loopDirection="bounce"},
+        {name="jumping right", frames={1,3,4,5,6,7}, time=750, loopCount=1, loopDirection="bounce"},
+        {name="jumping left", frames={12,14,15,16,17,18}, time=750, loopCount=1, loopDirection="bounce"},
+    }
 	local playerSprite = display.newSprite( spriteSheet, sequenceData )
     level.playerSprite = playerSprite;
     local playerSpritePhysicsOptions = table.copy(globals.playerPhysicsOptions)
@@ -287,7 +246,7 @@ function generatePlayerCharacter()
     }--]]
     print( playerSprite.width .. " " .. playerSprite.height)
     sprites.addDisplayControls(playerSprite);
-    playerSprite:setSize(playerSprite, {height = 1.2*pixelsPerMeter})
+    playerSprite:setSize(playerSprite, {height = 1.2*level.pixelsPerMeter})
     playerSpritePhysicsOptions.shape = playerSprite:getBoundingShape();
     --spritePhysicsOptions.shape = { 50,-50 , 50,50 , -50,50 , -50,-50};
     print( playerSprite.width .. " " .. playerSprite.height)
@@ -480,7 +439,7 @@ function level:setUpSpecificMap(map, name)
         }
         local guardSprite = display.newSprite( guardSpriteSheet, guardSequenceData )
         sprites.addDisplayControls(guardSprite);
-        guardSprite:setSize(guardSprite,{height = pixelsPerMeter * 1.4})
+        guardSprite:setSize(guardSprite,{height = level.pixelsPerMeter * 1.4})
         physicsOptions.shape = guardSprite:getBoundingShape();
         physics.addBody( guardSprite, "dynamic",physicsOptions )
         sprites.addTouchControls(guardSprite);
